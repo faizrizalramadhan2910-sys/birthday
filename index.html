@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Fellycia Aurelia Marsyalila ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   BASIC
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            #4a3046 0%,
+            #251727 35%,
+            #0b080e 100%
+        );
+
+    color:#fff;
+
+    font-family:
+        'Montserrat',
+        sans-serif;
+
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+
+        radial-gradient(
+            circle,
+            #fff 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle,
+            #ffddea 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle,
+            #fff 0 1px,
+            transparent 1.5px
+        );
+
+    background-size:
+        100px 100px,
+        150px 150px,
+        230px 230px;
+
+    background-position:
+        10px 20px,
+        50px 80px,
+        100px 30px;
+
+    opacity:.45;
+
+    animation:
+        twinkle 5s
+        infinite alternate;
+
+}
+
+
+@keyframes twinkle{
+
+    from{
+        opacity:.25;
+    }
+
+    to{
+        opacity:.75;
+    }
+
+}
+
+
+/* =====================================================
+   GLOW
+===================================================== */
+
+.glow{
+
+    position:fixed;
+
+    width:450px;
+    height:450px;
+
+    border-radius:50%;
+
+    filter:blur(110px);
+
+    opacity:.18;
+
+    pointer-events:none;
+
+}
+
+.glow.one{
+
+    background:#c33b82;
+
+    left:-220px;
+    top:-100px;
+
+}
+
+.glow.two{
+
+    background:#5527b4;
+
+    right:-200px;
+    bottom:-180px;
+
+}
+
+
+/* =====================================================
+   PAGE SYSTEM
+===================================================== */
+
+.page{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    padding:
+        40px
+        20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+    transform:
+        translateY(30px)
+        scale(.97);
+
+    transition:
+
+        opacity .8s ease,
+        transform .8s ease,
+        visibility .8s;
+
+}
+
+
+.page.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+.eyebrow{
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    color:#eab9ca;
+
+    margin-bottom:18px;
+
+}
+
+
+h1{
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-style:italic;
+
+    font-weight:600;
+
+    font-size:
+        clamp(
+            52px,
+            10vw,
+            90px
+        );
+
+    line-height:.82;
+
+}
+
+
+h2{
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-style:italic;
+
+    font-weight:500;
+
+    font-size:
+        clamp(
+            42px,
+            8vw,
+            70px
+        );
+
+    line-height:.9;
+
+    margin-top:10px;
+
+}
+
+
+.subtitle{
+
+    margin-top:25px;
+
+    color:#cbbac4;
+
+    font-size:10px;
+
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:40px;
+
+}
+
+
+.separator{
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:34px;
+
+    color:#d5a7b8;
+
+}
+
+
+.counter{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(30,20,35,.65);
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,.25);
+
+}
+
+
+.counter strong{
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:31px;
+
+    line-height:1;
+
+}
+
+
+.counter span{
+
+    margin-top:6px;
+
+    color:#a999a4;
+
+    font-size:7px;
+
+    letter-spacing:2px;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    margin-top:25px;
+
+    padding:
+        13px
+        25px;
+
+    border-radius:999px;
+
+    color:white;
+
+    font-family:
+        'Montserrat',
+        sans-serif;
+
+    font-size:9px;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #df82a2,
+            #f0aec1
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(237,146,177,.2);
+
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(237,146,177,.35);
+
+}
+
+
+/* =====================================================
+   LOCKED BUTTON
+===================================================== */
+
+.btn.locked{
+
+    cursor:not-allowed;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4b4148,
+            #62565e
+        );
+
+    color:#b8adb3;
+
+    box-shadow:none;
+
+    opacity:.8;
+
+}
+
+
+.btn.locked:hover{
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+
+/* =====================================================
+   LOCK MESSAGE
+===================================================== */
+
+.lock-message{
+
+    margin-top:15px;
+
+    color:#aa9ca5;
+
+    font-size:8px;
+
+    letter-spacing:1px;
+
+}
+
+
+/* =====================================================
+   LETTER
+===================================================== */
+
+.letter{
+
+    width:
+        min(
+            600px,
+            90vw
+        );
+
+    margin-top:30px;
+
+    padding:27px;
+
+    text-align:left;
+
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    border-radius:10px;
+
+    background:
+        rgba(43,29,46,.75);
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,.25);
+
+}
+
+
+.letter p{
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    color:#dfd1d8;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    margin-bottom:14px;
+
+}
+
+
+.letter .love{
+
+    color:#f1afc4;
+
+    text-align:right;
+
+    margin-bottom:0;
+
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.video-box{
+
+    width:
+        min(
+            650px,
+            92vw
+        );
+
+    margin-top:30px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    background:#000;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,.5);
+
+}
+
+
+.video-box video{
+
+    display:block;
+
+    width:100%;
+
+    max-height:55vh;
+
+    object-fit:contain;
+
+}
+
+
+/* =====================================================
+   UPLOAD
+===================================================== */
+
+.upload-box{
+
+    margin-top:18px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:8px;
+
+}
+
+
+.upload-label{
+
+    display:inline-block;
+
+    cursor:pointer;
+
+    padding:
+        9px
+        15px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    color:#d6c4cd;
+
+    font-size:8px;
+
+    letter-spacing:1px;
+
+}
+
+
+.upload-label:hover{
+
+    background:
+        rgba(255,255,255,.1);
+
+}
+
+
+input[type=file]{
+
+    display:none;
+
+}
+
+
+/* =====================================================
+   FINAL PAGE
+===================================================== */
+
+.final{
+
+    position:relative;
+
+}
+
+
+.final-content{
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+
+.final-content h1{
+
+    font-size:
+        clamp(
+            55px,
+            11vw,
+            105px
+        );
+
+}
+
+
+.final-content p{
+
+    max-width:340px;
+
+    margin:
+        25px auto 0;
+
+    color:#c9bac2;
+
+    font-size:10px;
+
+    line-height:1.6;
+
+}
+
+
+/* =====================================================
+   POLAROID
+===================================================== */
+
+.polaroid{
+
+    position:absolute;
+
+    width:145px;
+
+    padding:
+        8px
+        8px
+        28px;
+
+    background:#eee8e9;
+
+    box-shadow:
+        0 20px 40px
+        rgba(0,0,0,.45);
+
+    z-index:2;
+
+    transition:.4s;
+
+}
+
+
+.polaroid img{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:
+        1 / 1.12;
+
+    object-fit:cover;
+
+    background:#c9c9c9;
+
+}
+
+
+.polaroid:hover{
+
+    transform:
+        rotate(0deg)
+        scale(1.08)
+        !important;
+
+    z-index:20;
+
+}
+
+
+.photo1{
+
+    left:8%;
+
+    top:12%;
+
+    transform:
+        rotate(-9deg);
+
+}
+
+
+.photo2{
+
+    right:9%;
+
+    top:11%;
+
+    transform:
+        rotate(8deg);
+
+}
+
+
+.photo3{
+
+    left:10%;
+
+    bottom:9%;
+
+    transform:
+        rotate(7deg);
+
+}
+
+
+.photo4{
+
+    right:9%;
+
+    bottom:10%;
+
+    transform:
+        rotate(-8deg);
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .counter{
+
+        width:60px;
+
+        height:65px;
+
+    }
+
+
+    .countdown{
+
+        gap:4px;
+
+    }
+
+
+    .separator{
+
+        font-size:25px;
+
+    }
+
+
+    .counter strong{
+
+        font-size:28px;
+
+    }
+
+
+    .letter{
+
+        padding:20px;
+
+        max-height:47vh;
+
+        overflow:auto;
+
+    }
+
+
+    .letter p{
+
+        font-size:14px;
+
+    }
+
+
+    .polaroid{
+
+        width:100px;
+
+        padding:
+            6px
+            6px
+            20px;
+
+    }
+
+
+    .photo1{
+
+        left:2%;
+        top:12%;
+
+    }
+
+
+    .photo2{
+
+        right:2%;
+        top:12%;
+
+    }
+
+
+    .photo3{
+
+        left:3%;
+        bottom:8%;
+
+    }
+
+
+    .photo4{
+
+        right:3%;
+        bottom:8%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+
+
+<!-- =====================================================
+     PAGE 1 — COUNTDOWN
+===================================================== -->
+
+<section
+    id="page1"
+    class="page active"
+>
+
+    <div class="eyebrow">
+        ✦ FOR FELLYCIA ✦
+    </div>
+
+
+    <h1>
+        Fellycia's
+    </h1>
+
+
+    <h2>
+        Special Day
+    </h2>
+
+
+    <p class="subtitle">
+
+        Sebuah kejutan kecil sedang
+        menunggu waktunya... ♥
+
+    </p>
+
+
+    <!-- COUNTDOWN -->
+
+    <div class="countdown">
+
+
+        <div class="counter">
+
+            <strong id="days">
+                00
+            </strong>
+
+            <span>
+                HARI
+            </span>
+
+        </div>
+
+
+        <div class="separator">
+            :
+        </div>
+
+
+        <div class="counter">
+
+            <strong id="hours">
+                00
+            </strong>
+
+            <span>
+                JAM
+            </span>
+
+        </div>
+
+
+        <div class="separator">
+            :
+        </div>
+
+
+        <div class="counter">
+
+            <strong id="minutes">
+                00
+            </strong>
+
+            <span>
+                MENIT
+            </span>
+
+        </div>
+
+
+        <div class="separator">
+            :
+        </div>
+
+
+        <div class="counter">
+
+            <strong id="seconds">
+                00
+            </strong>
+
+            <span>
+                DETIK
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <p class="small">
+
+        
+
+    </p>
+
+
+    <!-- LOCK BUTTON -->
+
+    <button
+        id="unlockButton"
+        class="btn locked"
+        onclick="openMessage()"
+        disabled
+    >
+
+        🔒 TERKUNCI — TUNGGU SAMPAI WAKTUNYA
+
+    </button>
+
+
+    <div
+        id="lockMessage"
+        class="lock-message"
+    >
+
+        Pesan ini baru bisa dibuka
+        ketika waktunya tiba ♡
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2 — MESSAGE
+===================================================== -->
+
+<section
+    id="page2"
+    class="page"
+>
+
+
+    <div class="eyebrow">
+        ✦ A LITTLE MESSAGE FOR YOU ✦
+    </div>
+
+
+    <h1>
+        Happy Birthday
+    </h1>
+
+
+    <div class="letter">
+
+
+        <p>
+
+            Dear Fellycia Aurelia Marsyalila,
+
+        </p>
+
+
+        <p>
+
+            Di umur yang baru ini,
+            aku cuma mau bilang semoga
+            hal-hal baik selalu datang
+            ke hidup kamu.
+
+        </p>
+
+
+        <p>
+
+            Semoga setiap langkah kamu
+            selalu dimudahkan, diberikan
+            kesehatan, kebahagiaan,
+            panjang umur, dan semua
+            impian yang kamu punya
+            bisa tercapai satu per satu.
+
+        </p>
+
+
+        <p>
+
+            Tetap jadi Fellycia yang kuat,
+            baik, dan hebat seperti sekarang.
+            Jangan pernah lupa kalau kamu
+            adalah seseorang yang sangat
+            berharga.
+
+        </p>
+
+
+        <p>
+
+            Semoga di umur yang baru ini,
+            semakin banyak alasan untuk
+            tersenyum, semakin banyak
+            cerita indah, dan semakin
+            banyak hal baik yang datang
+            menghampiri kamu.
+
+        </p>
+
+
+        <p>
+
+            Sekali lagi,
+            selamat ulang tahun,
+            Fellycia Aurelia Marsyalila. ♥
+
+        </p>
+
+
+        <p class="love">
+
+            I love you,
+            today, tomorrow,
+            and always. ♥
+
+        </p>
+
+
+    </div>
+
+
+    <button
+        class="btn"
+        onclick="goToPage('page3')"
+    >
+
+        ♡ A MOMENT FOR YOU ♡
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3 — VIDEO
+===================================================== -->
+
+<section
+    id="page3"
+    class="page"
+>
+
+
+    <div class="eyebrow">
+        ✦ A SPECIAL VIDEO MESSAGE ✦
+    </div>
+
+
+    <h1>
+        A Moment
+    </h1>
+
+
+    <h2>
+        For Fellycia
+    </h2>
+
+
+    <div class="video-box">
+
+
+        <video
+            id="birthdayVideo"
+            controls
+            playsinline
+        >
+
+            Browser kamu tidak mendukung video.
+
+        </video>
+
+
+    </div>
+
+
+    <div class="upload-box">
+
+
+        <label class="upload-label">
+
+            ♡ PILIH VIDEO
+
+            <input
+                type="file"
+                id="videoInput"
+                accept="video/*"
+            >
+
+        </label>
+
+
+    </div>
+
+
+    <button
+        class="btn"
+        onclick="goToPage('page4')"
+    >
+
+        ♡ BIRTHDAY WISHES ♡
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4 — FINAL
+===================================================== -->
+
+<section
+    id="page4"
+    class="page final"
+>
+
+
+    <!-- PHOTO 1 -->
+
+    <div class="polaroid photo1">
+    <img src="m1.jpg.jpeg" alt="Memory 1">
+    <span>Memory 1</span>
+</div>
+
+<div class="polaroid photo2">
+    <img src="m2.jpg.jpeg" alt="Memory 2">
+    <span>Memory 2</span>
+</div>
+
+<div class="polaroid photo3">
+    <img src="m3.jpg.jpeg" alt="Memory 3">
+    <span>Memory 3</span>
+</div>
+
+<div class="polaroid photo4">
+    <img src="m4.jpg.jpeg" alt="Memory 4">
+    <span>Memory 4</span>
+</div>
+
+
+
+    <div class="final-content">
+
+
+        <div class="eyebrow">
+            ✦ FOR FELLYCIA ✦
+        </div>
+
+
+        <h1>
+
+            Your
+            <br>
+            Special Day
+
+        </h1>
+
+
+        <p>
+
+            Semoga hari ini,
+            besok, dan semua hari
+            setelahnya selalu dipenuhi
+            kebahagiaan dan hal-hal baik.
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="restart()"
+        >
+
+            ♡ START AGAIN ♡
+
+        </button>
+
+
+        <!-- PHOTO UPLOAD -->
+
+        <div class="upload-box">
+
+
+            <label class="upload-label">
+
+                FOTO 1
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="
+                        loadPhoto(
+                            this,
+                            'img1'
+                        )
+                    "
+                >
+
+            </label>
+
+
+            <label class="upload-label">
+
+                FOTO 2
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="
+                        loadPhoto(
+                            this,
+                            'img2'
+                        )
+                    "
+                >
+
+            </label>
+
+
+            <label class="upload-label">
+
+                FOTO 3
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="
+                        loadPhoto(
+                            this,
+                            'img3'
+                        )
+                    "
+                >
+
+            </label>
+
+
+            <label class="upload-label">
+
+                FOTO 4
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="
+                        loadPhoto(
+                            this,
+                            'img4'
+                        )
+                    "
+                >
+
+            </label>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<script>
+
+/* =====================================================
+   =====================================================
+   TARGET DATE
+   =====================================================
+
+   GANTI BAGIAN INI SESUAI TANGGAL ULANG TAHUN FELLYCIA.
+
+   Format:
+
+   new Date(
+       TAHUN,
+       BULAN,
+       TANGGAL,
+       JAM,
+       MENIT,
+       DETIK
+   );
+
+   PENTING:
+   Januari  = 0
+   Februari = 1
+   Maret    = 2
+   April    = 3
+   Mei      = 4
+   Juni     = 5
+   Juli     = 6
+   Agustus  = 7
+   September= 8
+   Oktober  = 9
+   November = 10
+   Desember = 11
+
+
+   CONTOH:
+
+   25 Desember 2026
+   jam 00:00
+
+   =
+
+   new Date(
+       2026,
+       11,
+       25,
+       0,
+       0,
+       0
+   );
+
+===================================================== */
+
+
+const TARGET_DATE =
+    new Date(
+        2026,
+        8,
+        22,
+        0,
+        0,
+        0
+    );
+
+
+
+/* =====================================================
+   STATUS WEBSITE
+===================================================== */
+
+let websiteUnlocked = false;
+
+
+
+/* =====================================================
+   CEK WAKTU
+===================================================== */
+
+function checkUnlockStatus(){
+
+    const now =
+        new Date();
+
+
+    if(
+        now.getTime()
+        >=
+        TARGET_DATE.getTime()
+    ){
+
+        websiteUnlocked = true;
+
+        unlockWebsite();
+
+    }
+    else{
+
+        websiteUnlocked = false;
+
+        lockWebsite();
+
+    }
+
+}
+
+
+
+/* =====================================================
+   LOCK WEBSITE
+===================================================== */
+
+function lockWebsite(){
+
+    const button =
+        document.getElementById(
+            "unlockButton"
+        );
+
+
+    button.disabled = true;
+
+    button.classList.add(
+        "locked"
+    );
+
+
+    button.innerHTML =
+        "🔒 TERKUNCI — TUNGGU SAMPAI WAKTUNYA";
+
+
+    document.getElementById(
+        "lockMessage"
+    ).innerHTML =
+
+        "Pesan ini baru bisa dibuka ketika waktunya tiba ♡";
+
+
+    /*
+       Pastikan halaman yang terlihat
+       selalu page 1 ketika masih terkunci.
+    */
+
+    document
+        .querySelectorAll(".page")
+        .forEach(
+            page =>
+                page.classList.remove(
+                    "active"
+                )
+        );
+
+
+    document
+        .getElementById("page1")
+        .classList.add("active");
+
+}
+
+
+
+/* =====================================================
+   UNLOCK WEBSITE
+===================================================== */
+
+function unlockWebsite(){
+
+    const button =
+        document.getElementById(
+            "unlockButton"
+        );
+
+
+    button.disabled = false;
+
+
+    button.classList.remove(
+        "locked"
+    );
+
+
+    button.innerHTML =
+        "♡ OPEN YOUR MESSAGE ♡";
+
+
+    document.getElementById(
+        "lockMessage"
+    ).innerHTML =
+
+        "Waktunya telah tiba... selamat ulang tahun, Fellycia ♡";
+
+}
+
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+function updateCountdown(){
+
+    const now =
+        new Date();
+
+
+    let difference =
+        TARGET_DATE.getTime()
+        -
+        now.getTime();
+
+
+    /*
+       Kalau sudah mencapai tanggal,
+       otomatis buka.
+    */
+
+    if(
+        difference <= 0
+    ){
+
+        difference = 0;
+
+        websiteUnlocked = true;
+
+        unlockWebsite();
+
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            (
+                1000 *
+                60 *
+                60 *
+                24
+            )
+        );
+
+
+    const hours =
+        Math.floor(
+            (
+                difference /
+                (
+                    1000 *
+                    60 *
+                    60
+                )
+            )
+            %
+            24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (
+                difference /
+                (
+                    1000 *
+                    60
+                )
+            )
+            %
+            60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (
+                difference /
+                1000
+            )
+            %
+            60
+        );
+
+
+    document.getElementById(
+        "days"
+    ).textContent =
+        String(days)
+        .padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "hours"
+    ).textContent =
+        String(hours)
+        .padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "minutes"
+    ).textContent =
+        String(minutes)
+        .padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "seconds"
+    ).textContent =
+        String(seconds)
+        .padStart(
+            2,
+            "0"
+        );
+
+}
+
+
+
+/* =====================================================
+   OPEN MESSAGE
+===================================================== */
+
+function openMessage(){
+
+    /*
+       JANGAN BOLEH BUKA
+       SEBELUM WAKTU
+    */
+
+    if(
+        !websiteUnlocked
+    ){
+
+        lockWebsite();
+
+        return;
+
+    }
+
+
+    goToPage(
+        "page2"
+    );
+
+}
+
+
+
+/* =====================================================
+   PAGE NAVIGATION
+===================================================== */
+
+function goToPage(
+    pageID
+){
+
+    /*
+       Semua halaman selain page1
+       tidak boleh dibuka sebelum
+       waktunya.
+    */
+
+    if(
+        !websiteUnlocked
+        &&
+        pageID !== "page1"
+    ){
+
+        lockWebsite();
+
+        return;
+
+    }
+
+
+    document
+        .querySelectorAll(".page")
+        .forEach(
+            page => {
+
+                page.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+
+    setTimeout(
+        function(){
+
+            document
+                .getElementById(
+                    pageID
+                )
+                .classList.add(
+                    "active"
+                );
+
+        },
+        100
+    );
+
+}
+
+
+
+/* =====================================================
+   RESTART
+===================================================== */
+
+function restart(){
+
+    const video =
+        document.getElementById(
+            "birthdayVideo"
+        );
+
+
+    if(video){
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    }
+
+
+    /*
+       START AGAIN hanya kembali
+       ke countdown.
+
+       Kalau tanggal sudah lewat,
+       tombol tetap bisa dibuka.
+    */
+
+    goToPage(
+        "page1"
+    );
+
+}
+
+
+
+/* =====================================================
+   VIDEO UPLOAD
+===================================================== */
+
+document
+    .getElementById(
+        "videoInput"
+    )
+    .addEventListener(
+        "change",
+        function(event){
+
+            const file =
+                event
+                .target
+                .files[0];
+
+
+            if(!file){
+
+                return;
+
+            }
+
+
+            const videoURL =
+                URL.createObjectURL(
+                    file
+                );
+
+
+            const video =
+                document.getElementById(
+                    "birthdayVideo"
+                );
+
+
+            video.src =
+                videoURL;
+
+
+            video.load();
+
+        }
+    );
+
+
+
+/* =====================================================
+   PHOTO UPLOAD
+===================================================== */
+
+function loadPhoto(
+    input,
+    imageID
+){
+
+    const file =
+        input.files[0];
+
+
+    if(!file){
+
+        return;
+
+    }
+
+
+    const imageURL =
+        URL.createObjectURL(
+            file
+        );
+
+
+    document
+        .getElementById(
+            imageID
+        )
+        .src =
+        imageURL;
+
+}
+
+
+
+/* =====================================================
+   START
+===================================================== */
+
+checkUnlockStatus();
+
+updateCountdown();
+
+
+/*
+   Update setiap 1 detik.
+*/
+
+setInterval(
+    function(){
+
+        checkUnlockStatus();
+
+        updateCountdown();
+
+    },
+    1000
+);
+
+</script>
+
+
+</body>
+</html>
