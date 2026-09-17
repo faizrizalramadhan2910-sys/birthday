@@ -1789,18 +1789,13 @@ function loadPhoto(
 
 websiteUnlocked = true;
 
-unlockWebsite();
+document.getElementById("unlockButton").disabled = false;
 
-updateCountdown();
+document.getElementById("unlockButton").classList.remove("locked");
 
+document.getElementById("unlockButton").innerHTML =
+    "♡ OPEN YOUR MESSAGE ♡";
 
-setInterval(
-    function(){
-
-        checkUnlockStatus();
-
-        updateCountdown();
-
-    },
-    1000
-);
+document.getElementById("lockMessage").innerHTML =
+    "Waktunya telah tiba... selamat ulang tahun, Fellycia ♡";
+   
