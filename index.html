@@ -1364,8 +1364,7 @@ input[type=file]{
 ===================================================== */
 
 
-const TARGET_DATE = new Date(2026, 8, 18, 0, 0, 0);
-
+const TARGET_DATE = new Date(2020, 0, 1, 0, 0, 0);
 
 /* =====================================================
    STATUS WEBSITE
@@ -1750,52 +1749,6 @@ function restart(){
 
 
 
-/* =====================================================
-   VIDEO UPLOAD
-===================================================== */
-
-document
-    .getElementById(
-        "videoInput"
-    )
-    .addEventListener(
-        "change",
-        function(event){
-
-            const file =
-                event
-                .target
-                .files[0];
-
-
-            if(!file){
-
-                return;
-
-            }
-
-
-            const videoURL =
-                URL.createObjectURL(
-                    file
-                );
-
-
-            const video =
-                document.getElementById(
-                    "birthdayVideo"
-                );
-
-
-            video.src =
-                videoURL;
-
-
-            video.load();
-
-        }
-    );
-
 
 
 /* =====================================================
@@ -1810,19 +1763,14 @@ function loadPhoto(
     const file =
         input.files[0];
 
-
     if(!file){
-
         return;
-
     }
-
 
     const imageURL =
         URL.createObjectURL(
             file
         );
-
 
     document
         .getElementById(
@@ -1858,9 +1806,3 @@ setInterval(
     },
     1000
 );
-
-</script>
-
-
-</body>
-</html>
