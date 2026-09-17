@@ -1787,14 +1787,12 @@ function loadPhoto(
    START
 ===================================================== */
 
-checkUnlockStatus();
+websiteUnlocked = true;
+
+unlockWebsite();
 
 updateCountdown();
 
-
-/*
-   Update setiap 1 detik.
-*/
 
 setInterval(
     function(){
